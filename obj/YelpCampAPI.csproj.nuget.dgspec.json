@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj": {}
+    "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj": {
+    "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj",
         "projectName": "YelpCampAPI",
-        "projectPath": "c:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj",
+        "projectPath": "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj",
         "packagesPath": "C:\\Users\\ghots\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\obj\\",
+        "outputPath": "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
