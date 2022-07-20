@@ -9,7 +9,10 @@ public class CampgroundModel
     public string Name { get; set;}
     public double Price { get; set;}
     public string Img { get; set;}
-
+    public string Description { get; set;}
+    public int IdUser { get; set;}
+    public UserModel User {get; set;}
     [JsonIgnore]
     public virtual ICollection<CommentModel> Comments { get; set;} 
+    
 }
