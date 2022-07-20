@@ -24,6 +24,23 @@ public class YelpCampContext: DbContext
             CampgroundModel.Property(p => p.Img).IsRequired();
             CampgroundModel.HasOne<UserModel>(p => p.User).WithMany(u => u.Campgrounds).HasForeignKey(p => p.IdUser);
         });
+
+        modelBuilder.Entity<UserModel>(UserModel => 
+        {
+            UserModel.ToTable("User");
+            UserModel.HasKey(p => p.Id);
+            UserModel.Property(p => p.Name).IsRequired();
+            UserModel.Property(p => p.UserName).IsRequired();
+            UserModel.Property(p => p.Password).IsRequired();
+        });
+
+        modelBuilder.Entity<CommentModel>(CommentModel =>
+        {
+            CommentModel.ToTable("Comment");
+            CommentModel.HasKey(p => p.Id);
+            CommentModel.HasOne<UserModel>(u => u.userModel).WithMany(p => p.Comments).HasForeignKey(u => u.IdUser);
+            CommentModel.HasOne<CampgroundModel>( c => c.campgroundModel).WithMany(p => p.Comments).HasForeignKey(c => c.IdCampgorund);
+        });
     }
 
 
