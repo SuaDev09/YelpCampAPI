@@ -6,23 +6,43 @@ namespace YelpCampAPI.Services;
 
 public class CommentService : IComment
 {
-    public Task Delete(int id)
+    YelpCampContext context;
+
+    public CommentService(YelpCampContext dbContext)
     {
-        throw new NotImplementedException();
+        context = dbContext;
     }
 
     public IEnumerable<CommentModel> Get()
     {
-        throw new NotImplementedException();
+        return context.Comments;
     }
 
-    public Task Save(CommentModel comment)
+    public async Task Save(CommentModel comment)
     {
-        throw new NotImplementedException();
+        context.Add(comment);
+        await context.SaveChangesAsync();
     }
 
-    public Task Update(int id, CommentModel comment)
+    public async Task Update(int id, CommentModel comment)
     {
-        throw new NotImplementedException();
+        var commentActual = context.Comments.Find(id);
+
+        if(commentActual != null)
+        {
+            commentActual.Comment = comment.Comment;
+            await context.SaveChangesAsync();
+        }
+    }
+    
+    public async Task Delete(int id)
+    {
+        var commentActual = context.Comments.Find(id);
+
+        if(commentActual != null)
+        {
+            context.Remove(commentActual);
+            await context.SaveChangesAsync();
+        }
     }
 }
