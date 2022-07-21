@@ -6,23 +6,45 @@ namespace YelpCampAPI.Services;
 
 public class UserService : IUser
 {
-    public Task Delete(int id)
+    YelpCampContext context;
+
+    public UserService(YelpCampContext dbContext)
     {
-        throw new NotImplementedException();
+        context = dbContext;
     }
 
     public IEnumerable<UserModel> Get()
     {
-        throw new NotImplementedException();
+        return context.Users;
     }
 
-    public Task Save(UserModel user)
+    public async Task Save(UserModel user)
     {
-        throw new NotImplementedException();
+        context.Add(user);
+        await context.SaveChangesAsync();
     }
 
-    public Task Update(int id, UserModel user)
+    public async Task Update(int id, UserModel user)
     {
-        throw new NotImplementedException();
+        var userActual = context.Users.Find(id);
+
+        if(userActual != null)
+        {
+            userActual.Name = user.Name;
+            userActual.Password = user.Password;
+            userActual.UserName = user.UserName;
+            await context.SaveChangesAsync();
+        }
+    }
+    
+    public async Task Delete(int id)
+    {
+        var userActual = context.Users.Find(id);
+
+        if(userActual != null)
+        {
+            context.Remove(userActual);
+            await context.SaveChangesAsync();
+        }
     }
 }
