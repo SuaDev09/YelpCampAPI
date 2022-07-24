@@ -1,3 +1,4 @@
+
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
@@ -11,5 +12,6 @@ public class CommentModel
     public int IdCampgorund { get; set;}
     public virtual CampgroundModel? campgroundModel { get; set;}
     public virtual UserModel? userModel { get; set;}
+
 
 }

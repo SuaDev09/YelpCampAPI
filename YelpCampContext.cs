@@ -42,6 +42,4 @@ public class YelpCampContext: DbContext
             CommentModel.HasOne<CampgroundModel>( c => c.campgroundModel).WithMany(p => p.Comments).HasForeignKey(c => c.IdCampgorund).OnDelete(DeleteBehavior.Cascade);
         });
     }
-
-
 }

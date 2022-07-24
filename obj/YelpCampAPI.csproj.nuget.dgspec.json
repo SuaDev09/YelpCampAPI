@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj": {}
+    "/run/media/suadev/ARCHCRAFT_2/Platzi/curso-apis-net/YelpCampAPI/YelpCampAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj": {
+    "/run/media/suadev/ARCHCRAFT_2/Platzi/curso-apis-net/YelpCampAPI/YelpCampAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj",
+        "projectUniqueName": "/run/media/suadev/ARCHCRAFT_2/Platzi/curso-apis-net/YelpCampAPI/YelpCampAPI.csproj",
         "projectName": "YelpCampAPI",
-        "projectPath": "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj",
-        "packagesPath": "C:\\Users\\ghots\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\obj\\",
+        "projectPath": "/run/media/suadev/ARCHCRAFT_2/Platzi/curso-apis-net/YelpCampAPI/YelpCampAPI.csproj",
+        "packagesPath": "/home/suadev/.nuget/packages/",
+        "outputPath": "/run/media/suadev/ARCHCRAFT_2/Platzi/curso-apis-net/YelpCampAPI/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ghots\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/suadev/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,6 +69,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.6, 6.0.6]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.106/RuntimeIdentifierGraph.json"
         }
       }
     }

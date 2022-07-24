@@ -9,18 +9,21 @@ namespace YelpCampAPI.Controllers;
 public class CampgroundController: ControllerBase
 {
     ICampground campgroundService;
+
     YelpCampContext dbcontext;
 
     public CampgroundController(ICampground service, YelpCampContext db)
     {   
         campgroundService = service;
         dbcontext = db;
+
     }
 
     [HttpGet]
     public IActionResult Get()
     {
         return Ok(campgroundService.Get());
+
     }
 
     [HttpPost]

@@ -1,8 +1,10 @@
 {
   "version": 2,
+
   "dgSpecHash": "GsszhNim6ofYksAAgaeOrbZhKpsoL8PXkw8gyGkt5/NDuRxQe985J7nQ/Kr57XpVRE8PcoyXP1GYcOmxM60mMw==",
+
   "success": true,
-  "projectFilePath": "C:\\Users\\ghots\\Mi unidad\\Platzi\\curso-apis-net\\YelpCampAPI\\YelpCampAPI.csproj",
+  "projectFilePath": "/run/media/suadev/ARCHCRAFT_2/Platzi/curso-apis-net/YelpCampAPI/YelpCampAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ghots\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ghots\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -73,6 +75,7 @@
     "C:\\Users\\ghots\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\ghots\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ghots\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+
   ],
   "logs": []
 }

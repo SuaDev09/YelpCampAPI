@@ -23,6 +23,7 @@ public class UserController : ControllerBase
     {
         dbcontext.Database.EnsureCreated();
         return Ok();
+
     }
 
     [HttpGet]

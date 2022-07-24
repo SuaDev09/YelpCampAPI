@@ -9,6 +9,7 @@ namespace YelpCampAPI.Controllers;
 public class CommentController : ControllerBase
 {
     IComment commentService;
+
     YelpCampContext dbcontext;
 
     public CommentController(IComment service, YelpCampContext db)
