@@ -6,12 +6,12 @@ namespace YelpCampAPI.Models;
 public class UserModel
 {
     public int Id { get; set;}
-    public string UserName { get; set;}
-    public string Name { get; set;}
+    public string? UserName { get; set;}
+    public string? Name { get; set;}
     [JsonIgnore]
-    public virtual ICollection<CampgroundModel> Campgrounds { get; set;}
+    public virtual ICollection<CampgroundModel>? Campgrounds { get; set;}
     [JsonIgnore]
-    public virtual ICollection<CommentModel> Comments { get; set;}
+    public virtual ICollection<CommentModel>? Comments { get; set;}
     [JsonIgnore]
-    public string Password { get; set;}
+    public string? Password { get; set;}
 }

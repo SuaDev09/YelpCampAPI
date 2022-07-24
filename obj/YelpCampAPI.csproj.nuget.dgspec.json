@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.0.0-preview3.22168.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.2, )"
